@@ -1,8 +1,4 @@
-<a class="title-nav">{{ .Site.Title }}</a>
-<a href="{{ "/" | relURL }}">accueil</a>
-{{ range .Site.Menus.main }}
-<a href="{{ .URL }}">{{ .Name }}</a>
-{{ end }}
+<a class="title">{{ .Site.Title }}</a>
 {{ with .Site.GetPage "/blog" }}
 <a href="{{ "/blog" | relURL }}">blog</a>
 {{ end }}
